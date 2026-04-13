@@ -187,10 +187,7 @@
 // import mongoose
 import mongoose from "mongoose";
 // establish connection
-mongoose
-   .connect("mongodb+srv://dbB9:dbSWE363Lab@cluster0.gbsdxgh.mongodb.net/TestDB")
-   .then(() => console.log("Connected to MongoDB"))
-   .catch((err) => console.log(err));
+mongoose.connect("mongodb+srv://dbB9:dbSWE363Lab@cluster0.gbsdxgh.mongodb.net/TestDB")
 
 // define schema
 const studentSchema = new mongoose.Schema({
