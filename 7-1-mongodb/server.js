@@ -205,7 +205,7 @@ async function createStudents() {
       {name: "Ali", age: 21, major: "CS"},
       {name: "Sara", age: 23, major: "SE"}
    ]);
-   console.log("Inserted");
+   console.log("✅ Inserted");
 }
 createStudents();
 // read document
@@ -216,6 +216,10 @@ async function readStudents() {
 readStudents();
 
 // update document
-
+async function updateStudent() {
+   await Student.updateOne({ name: "Ali" }, { age: 22 });
+   console.log("✅ Updated Ali");
+}
+updateStudent();
 
 // delete document
